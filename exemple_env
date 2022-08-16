@@ -1,0 +1,115 @@
+#BOT STG
+SLACK_TOKEN=
+#SLACK_TOKEN=
+APP_ID=
+BOT_NAME=
+BOT_LOGO=
+CLIENT_ID=
+CLIENT_SECRET=
+ASSIG_SECRET=
+TOKEN_VERIFY=
+USER_OAUTH_TOKEN=
+CHANNEL=
+#Bot PROD
+# SLACK_TOKEN=
+# APP_ID=
+# CLIENT_ID=
+# CLIENT_SECRET=
+# ASSIG_SECRET=
+# TOKEN_VERIFY=
+# USER_OAUTH_TOKEN=
+# CHANNEL='iam-chatbot-channel-prod'
+
+#credentials from API IDMIME prod
+CLIENT_ID_API=
+CLIENT_SECRET_API=
+TENANT=
+
+#credentials from bot prod on AZURE
+CLIENT_ID_APP_AAD=
+CLIENT_SECRET_APP_AAD=
+TENANT=
+SCOPE=
+
+#credentials from bot stg on AZURE just local test
+# CLIENT_ID_APP_AAD_STG=
+# CLIENT_SECRET_APP_AAD_STG=
+# TENANT_STG=
+# SCOPE_STG=
+
+#Endpoint API Slack
+URI_GET_USER_PROPERTIES=https://slack.com/api/users.info
+
+#end points Graph API
+URI_GRAPH_API_1_0=https://graph.microsoft.com/v1.0/
+URI_GRAPH_API_BETA=https://graph.microsoft.com/beta/
+URI_USER_GRAPH_API=https://graph.microsoft.com/v1.0/users
+URI_GROUPS_GRAPH_API=https://graph.microsoft.com/v1.0/groups
+URI_ENTERPRISE_APPLICATION=servicePrincipals
+URI_REQUESTS_MYACCESS=https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+URI_CATALOG_GRAPH_API=identityGovernance/entitlementManagement/catalogs
+URI_ACCESSPACKAGE_GRAPH_API=identityGovernance/entitlementManagement/accessPackages
+
+#URI automation/azure prod
+URI_ENDPOINT_AUTOMATION_PROD=
+#URI automation/azure stg
+#URI_ENDPOINT_AUTOMATION=
+
+#Message send to slack
+MESSAGE_DIV=
+MESSAGE_LOADING=
+
+#Uri Onbording PROD
+#URI_ONBORDING_PROCESS=
+#Uri Onbording STG
+URI_ONBORDING_PROCESS=
+
+#API employee
+#stg
+URI_ENDPOINT_API_EMPLOYEE=
+#prod
+# URI_ENDPOINT_API_EMPLOYEE=
+#URI_ENDPOINT_API_EMPLOYEE=http://localhost:8000/
+SCOPE_API_EMPLOYEE
+#User send erros from bot
+WARNING_USER=
+
+#firestore PROD
+firestore_key=
+salt_64=
+iv_64=
+idmime_key=
+PJ_FIRESTORE=
+#firestore STG
+# firestore_key=
+# salt_64=
+# iv_64=
+# idmime_key=
+# PJ_FIRESTORE=
+
+#groups security
+#sg_iam_bot_sos_menu
+SG_IAM_BOT_SIAC_MENU=
+#sg_seguranca_idmime_gov
+SG_IAM_BOT_GOV_MENU=
+#sg_seguranca_idmime_iam
+SG_IAM_BOT_IAM_MENU=
+#sg_iam_bot_siac_onbording
+SG_IAM_BOT_SIAC_ONBORDING=
+#STG
+# #sg_iam_bot_sos_menu
+# SG_IAM_BOT_SIAC_MENU=
+# #sg_seguranca_idmime_gov
+# SG_IAM_BOT_GOV_MENU=
+# #sg_seguranca_idmime_iam
+# SG_IAM_BOT_IAM_MENU=
+# #sg_iam_bot_siac_onbording
+# SG_IAM_BOT_SIAC_ONBORDING=
+# SG_IAM_BOT_SIAC_MENU=
+# SG_IAM_BOT_IAM_MENU=
+# SG_IAM_BOT_GOV_MENU=
+# SG_IAM_BOT_SIAC_ONBORDING=
+# SG_IAM_BOT_SIAC_MENU=
+# SG_IAM_BOT_IAM_MENU=
+# SG_IAM_BOT_GOV_MENU=
+# SG_IAM_BOT_SIAC_ONBORDING=
