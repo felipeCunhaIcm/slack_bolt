@@ -1,10 +1,10 @@
 import logging
 from os import environ
 
-from slack_bolt import App
-
 import slack
 from app.controllers.menu import controller_message
+
+from slack_bolt import App
 
 token = environ['SLACK_TOKEN']
 signing_secret = environ['ASSIG_SECRET']
@@ -17,15 +17,16 @@ BOT_ID = client.api_call("auth.test")["user_id"]
 
 logging.basicConfig(level=logging.INFO)
 
+
 @app.event('message')
 def menu(body):
     try:
         event = body.get('event', {})
         logging.info(f"Evento: {event}")
 
-        txt = str(event.get('text')).replace('*','')
+        txt = str(event.get('text')).replace('*', '')
         logging.info(f"Texto: {txt}")
-        
+
         ts = event.get('ts')
         user_id = event.get('user')
         _channel = event.get('channel')
@@ -36,7 +37,8 @@ def menu(body):
         logging.info(f"user_id: {user_id} | mail: {mail}")
 
         if user_id != BOT_ID:
-            client.chat_postMessage(channel=_channel, thread_ts=ts, text=msg_loading.replace('bot-name', environ['BOT_NAME']))
+            client.chat_postMessage(channel=_channel, thread_ts=ts, text=msg_loading.replace(
+                'bot-name', environ['BOT_NAME']))
             txt_return = controller_message(txt, mail, user_id)
             del txt
             client.chat_postMessage(channel=user_id, text=txt_return)
